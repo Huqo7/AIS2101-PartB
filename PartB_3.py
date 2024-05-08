@@ -121,7 +121,7 @@ def RunGA(target, population_size, tournament_pool, genes, crossover_probability
     return (best_scores, best_canditates, generations)
 
 genes = "ABCDEFGHIJKLMNOPQRSTUVWXYZÆØÅabcdefghijklmnopqrstuvwxyzæøå0123456789*_-'";
-best_scores, best_candidates, generations = RunGA("Vegard_Forde*581814", 500, 50, genes, 0.5, 0.02, 100);
+best_scores, best_candidates, generations = RunGA("Vegard_Forde*581814", 600, 50, genes, 0.5, 0.05S, 100);
 
 plt.plot(generations, best_scores);
 plt.show();
